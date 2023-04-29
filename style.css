@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+* {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+#site {
+	display:grid;
+	grid: "title title"
+	"list hero"
+	"list people"
+	"list content"
+}
+
+#list {
+	display:grid;
+	grid: "title title"
+	"list content"
+}
+
+#art {
+	display:grid;
+	grid: "title title"
+	"list content"
+}
+
+#leave {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#other {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#leave p {
+	text-align: center;
+	font-size: 200px;
+	color: red;
+}
+
+#title {
+	grid-area: title;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	background-color: white;
+	padding-top:5vh;
+	padding-bottom:5vh;
+	padding-left:2vw;
+	font-size: 30px;
+	font-family: 'Philosopher', sans-serif;
+/*	border-top: outset;*/
+	border-bottom: outset;
+}
+
+a:visited {
+	color: inherit;
+}
+
+#cate {
+	grid-area: list;
+	display: flex;
+	flex-direction: column;
+	background-color: #FDF7C3;
+}
+
+#popularC {
+	display:flex;
+	flex-direction: column;
+}
+
+#popularC h2 {
+	padding-left:2vw;
+	padding-right: 3vw;
+	font-family: 'Noto Serif', serif;
+}
+
+#popularC a {
+	padding:1vw;
+	padding-left:2vw;
+	text-decoration: none;
+}
+
+#popularC a:hover {
+	background-color:white;
+}
+
+#otherC {
+	display:flex;
+	flex-direction: column;
+	padding-left:2vw;
+}
+
+#hero {
+/*	background: radial-gradient(circle at center, #BA90C6 , #F9D7E5 30% , #ffffec);*/
+	background-color: #FFB4B4;
+	padding-left: 2vw;
+	grid-area: hero;
+	display: grid;
+	grid: "order"
+	"name"
+	"abs";
+	height: 50vh;
+/*	width: 30vw;*/
+}
+
+#hero h2 {
+	grid-area: order;
+	font-size: 50px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+#heroTitle {
+	text-decoration: none;
+	grid-area: name;
+	font-size: 30px;
+	font-family: 'Philosopher', sans-serif;
+	align-self: end;
+	margin-bottom: 0px;
+}
+
+#hero p {
+	grid-area: abs;
+	padding-right: 800px;
+}
+
+#heroThumb {
+	grid-area: pic;
+	display:flex;
+	justify-content:center;
+	margin-bottom: 20px;
+/*	width: 1vw;*/
+}
+
+#heroThumb img {
+	aspect-ratio: 1/1;
+	width: 50%;
+}
+
+#people {
+	grid-area: people;
+	display: flex;
+	flex-direction: column;
+	background-color: #B2A4FF;
+}
+
+#peopleT {
+	padding-left: 2vw;
+	font-size: 50px;
+	font-family: 'Philosopher', sans-serif;
+/*	text-align: center;*/
+}
+
+#peopleCon {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+#content {
+	background-color: white;
+	grid-area: content;
+	display: flex;
+	flex-direction: column;
+}
+
+#content h2 {
+	padding-left: 2vw;
+	font-size: 50px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+.contentArticle {
+	grid-area: content;
+	display: flex;
+	flex-direction: column;
+}
+
+.article {
+	display: grid;
+	grid: "name pic"
+	"abs pic";
+	padding-top: 2%;
+	padding-bottom:2%;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	border-top: ridge;
+}
+
+.articleTitle {
+	grid-area: name;
+	font-family: 'Philosopher', sans-serif;
+	text-decoration: none;
+	font-size: 30px;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	align-self: end;
+}
+
+.articleThumb {
+	grid-area: pic;
+}
+
+.articleThumb img {
+	width:12vw;
+	aspect-ratio: 1/1;
+}
+
+.articleText {
+	grid-area: abs;
+	width: 60vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#footnote {
+	grid-area: foot;
+	text-align: center;
+}
+
+.profile {
+	display: grid;
+	grid: "pic"
+	"name"
+	"text";
+}
+
+.profile img {
+	grid-area: pic;
+	aspect-ratio: 1/1;
+	width:20vw;
+	justify-self: center;
+}
+
+.profile h3 {
+	grid-area: name;
+	text-align: center;
+}
+
+.profile p {
+	grid-area: text;
+	text-align: center;
+}
+
+#zuck {
+	
+}
+
+#musk {
+	
+}
+
+#gates {
+
+}
+
+#crash {
+/*	align-self: end;*/
+}
+
+#buttonCon {
+/*	display: flex;*/
+/*	justify-content: center;*/
+}
+
+#buttonCon a {
+	text-decoration: none;
+	background-color: #0070C6;
+	padding: 5px;
+	color: white;
+	border-radius: 5px;
+}
+
+#art .articleTitle{
+	padding-top: 3vh;
+	align-self: auto;
+	padding-left: 8vw;
+	padding-right: 7vw;
+}
+
+#art .articleText{
+	width:auto;
+	padding-left: 8vw;
+	padding-right: 7vw;
+}
+
+#list .articleText{
+	width: auto;
+}
+
+#end {
+	border-bottom: ridge;
+}
+
+.alter {
+	filter: invert(1);
+}
