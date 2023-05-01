@@ -78,6 +78,10 @@ html {
 	border-bottom: outset;
 }
 
+a {
+	color: black;
+}
+
 a:visited {
 	color: inherit;
 }
@@ -323,4 +327,8 @@ a:visited {
 
 .alter {
 	filter: invert(1);
+}
+
+#list {
+	
 }

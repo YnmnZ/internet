@@ -2,19 +2,6 @@ let firstP = document.getElementById("zuck");
 let secondP = document.getElementById("musk");
 let thirdP = document.getElementById("gates");
 
-let hackLocation = document.getElementById("content")
-
-let userName = prompt("Enter your first name as user name.");
-
-let hacker = ["Cindy","Charlene","Caroline","Sabria","Siyue","Si Yue", "Si yue","Ashrita","Syna","Hailey","Lily","Haley","Jackson","Eileen","Cher","Kat","Heloise","Eva","Helen","Yanmin","Kaia","Effie"]
-
-for (var i = hacker.length - 1; i >= 0; i--) {
-	if (userName == hacker[i]) {
-		console.log(hacker[i]);
-		hack();
-	}
-}
-
 PowerGlitch.glitch('.glitch', { playMode: 'always' })
 PowerGlitch.glitch('.Cglitch', {
   "playMode": "always",
@@ -71,35 +58,4 @@ function numberCheck() {
 	console.log ("zuck is worth " + zuckWorth);
 	console.log ("musk is worth " + muskWorth);
 	console.log ("gates is worth " + gatesWorth);
-}
-
-function hack() {
-	let generateHack = document.createElement("DIV");
-	generateHack.classList.add("article");
-
-	let generateTitle = document.createElement("A");
-	generateTitle.classList.add("articleTitle");
-	generateTitle.classList.add("Cglitch");
-	generateTitle.href = 'indexAlter.html';
-	generateTitle.innerText = "**#5%^&bRK_$0"
-
-	let generateAbs = document.createElement("P");
-	generateAbs.classList.add("articleText");
-	generateAbs.classList.add("Cglitch");
-	generateAbs.innerText = 'hElLo ThErzE! tHeY nO iM hEre. u Mst eScpe.'
-
-	let generateThumb = document.createElement("A");
-	generateThumb.classList.add("articleThumb");
-	// generateThumb.classList.add("Cglitch");
-	generateThumb.href = 'indexAlter.html';
-
-	let generateImg = document.createElement("IMG");
-	generateImg.src = "";
-	generateThumb.appendChild(generateImg);
-
-	generateHack.appendChild(generateTitle);
-	generateHack.appendChild(generateAbs);
-	generateHack.appendChild(generateThumb);
-
-	hackLocation.appendChild(generateHack);
 }
